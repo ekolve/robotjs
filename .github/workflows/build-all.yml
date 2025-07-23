@@ -14,6 +14,12 @@ jobs:
       fail-fast: true
       matrix:
         include:
+          - os: ubuntu-latest
+            arch: x64
+            build-group: linux-x64
+          - os: macos-latest
+            arch: x64
+            build-group: darwin-universal
           - os: windows-latest
             arch: x86
             build-group: win32-x86
